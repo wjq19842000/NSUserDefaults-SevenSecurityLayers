@@ -108,6 +108,11 @@ static id __securedObj = nil;
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        // WJQ start
+        NSString *bundleIdentifierKey = (__bridge NSString *)kCFBundleIdentifierKey;
+        NSString *bundleIdentifier = NSBundle.mainBundle.infoDictionary[bundleIdentifierKey];
+        NSString *suite_name = [NSString stringWithFormat:@"%@.%@", bundleIdentifier, @"userdefaults"];
+        // WJQ end
         __securedObj = [[[NSSecuredUserDefaults alloc] initWithSuiteName:SUITE_NAME] setCombination:CombineDefault];
     });
     return __securedObj;
