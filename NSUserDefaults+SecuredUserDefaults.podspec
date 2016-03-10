@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NSUserDefaults-SevenSecurityLayers"
-  s.version      = "1.0.0"
+  s.version      = "1.2.4w"
   s.summary      = "A category which provides an encryption layer for NSUserDefaults to securely save data, just by one line of code."
   s.homepage     = "https://github.com/haikieu/NSUserDefaults-SevenSecurityLayers"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
