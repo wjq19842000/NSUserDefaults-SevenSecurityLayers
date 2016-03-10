@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'Classes/NSUserDefaults+*.{h,m}'
   s.source       = { 
-    :git => 'https://github.com/haikieu/NSUserDefaults-SevenSecurityLayers.git', 
+    :git => 'https://github.com/wjq19842000/NSUserDefaults-SevenSecurityLayers.git', 
     :tag => s.version.to_s
   }
   
