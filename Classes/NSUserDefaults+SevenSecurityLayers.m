@@ -112,8 +112,8 @@ static id __securedObj = nil;
         NSString *bundleIdentifierKey = (__bridge NSString *)kCFBundleIdentifierKey;
         NSString *bundleIdentifier = NSBundle.mainBundle.infoDictionary[bundleIdentifierKey];
         NSString *suite_name = [NSString stringWithFormat:@"%@.%@", bundleIdentifier, @"userdefaults"];
+        __securedObj = [[[NSSecuredUserDefaults alloc] initWithSuiteName:suite_name] setCombination:CombineDefault];
         // WJQ end
-        __securedObj = [[[NSSecuredUserDefaults alloc] initWithSuiteName:SUITE_NAME] setCombination:CombineDefault];
     });
     return __securedObj;
 }
