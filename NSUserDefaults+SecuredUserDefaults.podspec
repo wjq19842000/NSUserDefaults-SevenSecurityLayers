@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
   s.dependency 'crackify', '~> 0.0'
 
   s.source_files  = 'Classes/NSUserDefaults+*.{h,m}'
-  s.source       = { 
+  s.source        = { 
     :git => 'https://github.com/wjq19842000/NSUserDefaults-SevenSecurityLayers.git', 
-    :tag => s.version.to_s
+    :tag => '1.2.4w'
   }
   
 end
